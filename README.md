@@ -27,5 +27,6 @@
 This is README!
 
 ## Использованные ссылки 
+- [Project rules](https://docs.google.com/document/d/1NXFjAr3jDJUZGspv83a10K3i6GL39ZuWWcqhNFcq4eU/edit)
 - [Project structure](https://towardsdatascience.com/the-good-way-to-structure-a-python-project-d914f27dfcc9)
 - 
