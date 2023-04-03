@@ -16,4 +16,30 @@ class Problem:
     def evaluate_share(self, evl_ans : str) -> float:
         raise NotImplementedError('can\'t evaluate share for this problem type')
     
+class SortProblem(Problem):
+    def evaluate_share(self, evl_ans : str) -> int:
+        '''
+        Evaluate answer share of correct pairs of answers
+        '''
+        # if len(evl_ans) > len(self.ref_ans):
+        #     raise ValueError('evaluated answer is longer that reference answer') 
+        
 
+        def get_pairs_from_array(array : np.ndarray) -> set:
+            pairs = set()
+            for i in range(len(array)):
+                for j in range(i+1, len(array)):
+                    # if pairs already contains inverse pair drop both 
+                    if (array[j], array[i]) in pairs:
+                        pairs.remove((array[j], array[i]))
+                    else:
+                        pairs.add((array[i], array[j]))
+            return pairs
+        
+        evl_pairs = get_pairs_from_array(evl_ans)
+        ref_pairs = get_pairs_from_array(self.ref_ans)
+
+        correct_share = len(evl_pairs & ref_pairs) / len(ref_pairs)
+        
+        return correct_share
+        
