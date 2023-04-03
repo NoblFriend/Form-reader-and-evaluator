@@ -43,3 +43,17 @@ class SortProblem(Problem):
         
         return correct_share
         
+class MatchProblem(Problem):
+    def __init__(self, ref_ans: str, max_pts: int, min_share: float = 0.5) -> None:
+        super().__init__(ref_ans, max_pts, min_share)
+        self.ref_ans_table = np.ndarray(shape=len(self.ref_ans),dtype=set)
+        for pos, letter in enumerate(self.ref_ans):
+            self.ref_ans_table[pos] = {letter: 0 for pos, letter in enumerate(self.ref_ans)}
+            self.ref_ans_table[pos][letter] = 1
+
+    def evaluate(self, evl_ans: str) -> int:
+        pts = 0
+        for pos, letter in enumerate(evl_ans):
+            if evl_ans.count(letter) == 1:
+                pts += self.ref_ans_table[pos][letter]
+        return pts
