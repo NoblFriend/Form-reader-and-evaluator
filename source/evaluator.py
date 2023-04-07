@@ -60,3 +60,22 @@ class MatchProblem(Problem):
             if letter in self.ref_ans_table.index and evl_ans.count(letter) == 1:
                 pts += self.ref_ans_table.loc[letter, pos]
         return pts
+
+class Evaluator:
+    problem_list: list[Problem]
+
+    def __init__(self, *args: Problem) -> None:
+        self.problem_list = args
+
+    def eval_list(self, evl_list: list[str]) -> list[int]:
+        pts_list = []
+        for ans, pr in zip(evl_list, self.problem_list):
+            pts_list.append(pr.evaluate(ans.strip(' ')))
+        return pts_list
+    
+    def eval_table(self, evl_table: pd.DataFrame) -> pd.DataFrame:
+        pts_table = evl_table.copy()
+        for row_index in range(pts_table.shape[0]):
+            ans = evl_table.iloc[row_index][-len(self.problem_list):] 
+            pts_table.iloc[row_index,-len(self.problem_list):] = self.eval_list(ans)
+        return pts_table
