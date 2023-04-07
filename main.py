@@ -7,4 +7,4 @@ import source.evaluator as eval
 
 
 if __name__ == '__main__':
-    eval.greet()
+    pass
