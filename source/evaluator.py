@@ -12,7 +12,7 @@ class Problem:
     def evaluate(self, evl_ans: str) -> int:
         share = self.evaluate_share(evl_ans)
         pts = (share - self.min_share) / (1 - self.min_share) * self.max_pts
-        return int(max(pts, 0))
+        return round(max(pts, 0))
         
 
     def evaluate_share(self, evl_ans : str) -> float:
