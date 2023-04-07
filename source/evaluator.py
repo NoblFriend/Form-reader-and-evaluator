@@ -3,9 +3,8 @@ import pandas as pd
 import string
 
 class Problem:
-    def __init__(self, ref_ans:str, max_pts: int, min_share: float = 0.5) -> None:
+    def __init__(self, ref_ans:str, max_pts: int) -> None:
         self.ref_ans = ref_ans
-        self.min_share = min_share
         self.max_pts = max_pts
 
 
@@ -19,6 +18,10 @@ class Problem:
         raise NotImplementedError('can\'t evaluate share for this problem type')
     
 class SortProblem(Problem):
+    def __init__(self, ref_ans: str, max_pts: int, min_share: float = 0.5) -> None:
+        super().__init__(ref_ans, max_pts)
+        self.min_share = min_share
+
     def evaluate_share(self, evl_ans : str) -> int:
         '''
         Evaluate answer share of correct pairs of answers
@@ -46,8 +49,8 @@ class SortProblem(Problem):
         return correct_share
         
 class MatchProblem(Problem):
-    def __init__(self, ref_ans: str, max_pts: int, min_share: float = 0.5) -> None:
-        super().__init__(ref_ans, max_pts, min_share)
+    def __init__(self, ref_ans: str, max_pts: int) -> None:
+        super().__init__(ref_ans, max_pts)
         self.ref_ans_table = pd.DataFrame(index=sorted(set(ref_ans)), 
                                           columns=range(len(ref_ans)),
                                           data=0)
