@@ -57,12 +57,15 @@ class MatchProblem(Problem):
         for pos, letter in enumerate(self.ref_ans):
             self.ref_ans_table.loc[letter, pos] = 1
 
-    def evaluate(self, evl_ans: str) -> int:
+    def evaluate_pts(self, evl_ans: str) -> int:
         pts = 0
         for pos, letter in enumerate(evl_ans):
             if letter in self.ref_ans_table.index and evl_ans.count(letter) == 1:
                 pts += self.ref_ans_table.loc[letter, pos]
         return pts
+    
+    def evaluate(self, evl_ans: str) -> int:
+        return round(self.evaluate_pts(evl_ans)/self.evaluate_pts(self.ref_ans) * self.max_pts)
 
 class Evaluator:
     problem_list: list[Problem]
