@@ -33,6 +33,7 @@ class BlankBuilder:
         self.reset()
 
     def reset(self) -> None:
+        self._fields_rows_count = 0
         self._product = Blank()
 
     @property
