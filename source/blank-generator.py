@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import qrcode
+import json
 
 from config import config
 
@@ -17,12 +18,16 @@ class BlankBuilder:
         self.reset()
 
     def reset(self) -> None:
+        self._coords = dict()
         self._fields_rows_count = 0
         self._product = Blank()
 
     @property
     def blank(self) -> Blank:
         product = self._product
+        with open('data.json', 'w') as f:
+            json.dump(self._coords, f, indent=4)
+
         self.reset()
         return product
 
@@ -33,8 +38,12 @@ class BlankBuilder:
             (config.fields.row_spacing + config.fields.box_size)
         x2 = x1 + config.fields.box_size
         y2 = y1 + config.fields.box_size
+        thickness = 5
         cv2.rectangle(self._product.canvas, (x1, y1), (x2, y2),
-                      color=0, thickness=4, lineType=cv2.LINE_4)
+                      color=0, thickness=thickness, lineType=cv2.LINE_4)
+        self._coords['thickness'] = thickness
+        self._coords[f'Row {self._fields_rows_count + 1}'][f'Box {pos+1}'] = (x1, y1, x2, y2)
+
         if (numbered):
             font_scale = 1
             x = x1
@@ -55,6 +64,7 @@ class BlankBuilder:
 
     def place_fields_row(self, count, numbered=False) -> None:
         shift_x = self._draw_row_num()
+        self._coords[f'Row {self._fields_rows_count + 1}'] = dict()
         for pos in range(count):
             self._draw_field(pos, shift_x, numbered)
         self._fields_rows_count += 1
@@ -76,9 +86,10 @@ class BlankBuilder:
             np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
         img_qr = cv2.resize(
             img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
-        for qr_coord in [config.qr.top_left, config.qr.top_right, config.qr.bot_left]:
+        for pos, qr_coord in zip(['top_left', 'top_right', 'bot_left'], [config.qr.top_left, config.qr.top_right, config.qr.bot_left]):
             x1, y1, x2, y2 = qr_coord
             self._product.canvas[x1:x2, y1:y2] = img_qr
+            self._coords[f'QR {pos}'] = qr_coord
 
 
 if __name__ == '__main__':
@@ -90,3 +101,14 @@ if __name__ == '__main__':
     b.place_fields_row(count=5)
     b.place_code(code=200)
     b.blank.save('aaa')
+
+    # with open('data.json', 'r') as f:
+    # # Читаем данные из файла и преобразуем их в объект Python
+    #     data = json.load(f)
+    
+    # x1, y1, x2, y2 = data['Row 1']['Box 2']
+    # delta =  (data['thickness']+1)//2
+    # img = cv2.imread('aaa.png')
+    # cv2.rectangle(img, (x1+delta, y1+delta), (x2-delta, y2-delta),
+    #                   color=(255,0,0), thickness=1, lineType=cv2.LINE_4)
+    # cv2.imwrite('aaa.png', img)
