@@ -5,8 +5,8 @@ import qrcode
 from config import config
 
 class Blank:
-    def __init__(self, height=1754, width=1240) -> None:
-        self.canvas = np.ones((height, width), dtype=np.uint8) * 255
+    def __init__(self) -> None:
+        self.canvas = np.ones((config.page.height, config.page.width), dtype=np.uint8) * 255
 
     def save(self, path) -> None:
         cv2.imwrite(f'{path}.png', self.canvas)
@@ -76,12 +76,9 @@ class BlankBuilder:
             np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
         img_qr = cv2.resize(
             img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
-        x1 = config.page.margin
-        y1 = config.page.margin
-        x2 = config.page.margin+config.qr.size
-        y2 = config.page.margin+config.qr.size
-        self._product.canvas[x1:x2, y1:y2] = img_qr
-        pass
+        for qr_coord in [config.qr.top_left, config.qr.top_right, config.qr.bot_left]:
+            x1, y1, x2, y2 = qr_coord
+            self._product.canvas[x1:x2, y1:y2] = img_qr
 
 
 if __name__ == '__main__':
