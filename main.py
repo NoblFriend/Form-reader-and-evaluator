@@ -2,9 +2,8 @@
 rebrikov-av@phystech.com
 """
 
-
-import source.evaluator as eval
-
-
-if __name__ == '__main__':
-    pass
+from app.source.set_manager import SetManager
+sm = SetManager()
+# sm.create_set('demo')
+# sm.get_answers('demo')
+# sm.get_results('demo')

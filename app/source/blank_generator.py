@@ -12,6 +12,11 @@ class Blank:
     def save(self, path) -> None:
         cv2.imwrite(f'{path}.png', self.canvas)
 
+    def copy(self):
+        blank_copy = Blank()
+        blank_copy.canvas = self.canvas.copy()
+        return blank_copy
+
 
 class BlankGenerator:
     def __init__(self) -> None:
@@ -25,11 +30,13 @@ class BlankGenerator:
     @property
     def blank(self) -> Blank:
         product = self._product
-        with open('dump/data.json', 'w') as f:
-            json.dump(self._coords, f, indent=4)
-
         self.reset()
         return product
+    
+    def dump_data(self, path):
+        with open(f'{path}data.json', 'w') as f:
+            json.dump(self._coords, f, indent=4)
+
 
     def _draw_field(self, pos, shift_x=0, numbered=False) -> None:
         x1 = config.page.margin + pos * \
@@ -73,27 +80,36 @@ class BlankGenerator:
     def place_info(self) -> None:
         # will be implemented
         pass
-
-    def place_code(self, code) -> None:
-
-        def create_cv2_qr(data):
-            qr = qrcode.QRCode(version=1, box_size=config.qr.box_size, border=0)
-            qr.add_data(data)
-            img_qr = qr.make_image(
-                fill_color="black", back_color="white").convert('RGB')
-            img_qr = cv2.cvtColor(
-                np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
-            img_qr = cv2.resize(
-                img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
-            return img_qr
-        
-        cv2.putText(self._product.canvas, str(code).zfill(3), [
-                    400, 180], config.font.style, fontScale=4, color=0, thickness=5, lineType=cv2.LINE_AA)
+    
+    def place_codes(self, codes, path) -> None:
         self._coords['QR'] = dict()
-        for pos, qr_coord in zip(['top_left', 'top_right', 'bot_left'], [config.qr.top_left, config.qr.top_right, config.qr.bot_left]):
+        positions = ['tl', 'tr', 'bl']
+        pos_coords = [config.qr.tl, config.qr.tr, config.qr.bl]
+        for pos, qr_coord in zip(positions, pos_coords):
             x1, y1, x2, y2 = qr_coord
-            self._product.canvas[y1:y2, x1:x2] = create_cv2_qr(f'{pos}|{code}')
             self._coords['QR'][pos] = [[x1, y1], [x2, y2]]
+
+        self.dump_data(path)
+
+        for code in codes:
+            product = self._product.copy()
+            def create_cv2_qr(data):
+                qr = qrcode.QRCode(version=1, box_size=config.qr.box_size, border=0)
+                qr.add_data(data)
+                img_qr = qr.make_image(
+                    fill_color="black", back_color="white").convert('RGB')
+                img_qr = cv2.cvtColor(
+                    np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
+                img_qr = cv2.resize(
+                    img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
+                return img_qr
+            
+            cv2.putText(product.canvas, str(code).zfill(3), [
+                        400, 180], config.font.style, fontScale=4, color=0, thickness=5, lineType=cv2.LINE_AA)
+            for pos, qr_coord in zip(positions, pos_coords):
+                x1, y1, x2, y2 = qr_coord
+                product.canvas[y1:y2, x1:x2] = create_cv2_qr(f'{pos}|{code}')
+            product.save(f'{path}/blanks/{code}')
 
 
 if __name__ == '__main__':
