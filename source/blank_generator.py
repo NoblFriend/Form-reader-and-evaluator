@@ -13,19 +13,19 @@ class Blank:
         cv2.imwrite(f'{path}.png', self.canvas)
 
 
-class BlankBuilder:
+class BlankGenerator:
     def __init__(self) -> None:
         self.reset()
 
     def reset(self) -> None:
-        self._coords = dict()
+        self._coords = {'Fields' : dict()}
         self._fields_rows_count = 0
         self._product = Blank()
 
     @property
     def blank(self) -> Blank:
         product = self._product
-        with open('data.json', 'w') as f:
+        with open('dump/data.json', 'w') as f:
             json.dump(self._coords, f, indent=4)
 
         self.reset()
@@ -42,7 +42,7 @@ class BlankBuilder:
         cv2.rectangle(self._product.canvas, (x1, y1), (x2, y2),
                       color=0, thickness=thickness, lineType=cv2.LINE_4)
         self._coords['thickness'] = thickness
-        self._coords[f'Row {self._fields_rows_count + 1}'][f'Box {pos+1}'] = (x1, y1, x2, y2)
+        self._coords['Fields'][f'Row {self._fields_rows_count + 1}'][f'Box {pos+1}'] = [[x1, y1], [x2, y2]]
 
         if (numbered):
             font_scale = 1
@@ -64,7 +64,7 @@ class BlankBuilder:
 
     def place_fields_row(self, count, numbered=False) -> None:
         shift_x = self._draw_row_num()
-        self._coords[f'Row {self._fields_rows_count + 1}'] = dict()
+        self._coords['Fields'][f'Row {self._fields_rows_count + 1}'] = dict()
         for pos in range(count):
             self._draw_field(pos, shift_x, numbered)
         self._fields_rows_count += 1
@@ -75,32 +75,36 @@ class BlankBuilder:
         pass
 
     def place_code(self, code) -> None:
+
+        def create_cv2_qr(data):
+            qr = qrcode.QRCode(version=1, box_size=config.qr.box_size, border=0)
+            qr.add_data(data)
+            img_qr = qr.make_image(
+                fill_color="black", back_color="white").convert('RGB')
+            img_qr = cv2.cvtColor(
+                np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
+            img_qr = cv2.resize(
+                img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
+            return img_qr
+        
         cv2.putText(self._product.canvas, str(code).zfill(3), [
                     400, 180], config.font.style, fontScale=4, color=0, thickness=5, lineType=cv2.LINE_AA)
-
-        qr = qrcode.QRCode(version=1, box_size=config.qr.box_size, border=0)
-        qr.add_data(code)
-        img_qr = qr.make_image(
-            fill_color="black", back_color="white").convert('RGB')
-        img_qr = cv2.cvtColor(
-            np.array(img_qr, dtype=np.uint8), cv2.COLOR_RGB2GRAY)
-        img_qr = cv2.resize(
-            img_qr, (config.qr.size, config.qr.size), interpolation=cv2.INTER_NEAREST)
+        self._coords['QR'] = dict()
         for pos, qr_coord in zip(['top_left', 'top_right', 'bot_left'], [config.qr.top_left, config.qr.top_right, config.qr.bot_left]):
             x1, y1, x2, y2 = qr_coord
-            self._product.canvas[x1:x2, y1:y2] = img_qr
-            self._coords[f'QR {pos}'] = qr_coord
+            self._product.canvas[y1:y2, x1:x2] = create_cv2_qr(f'{pos}|{code}')
+            self._coords['QR'][pos] = [[x1, y1], [x2, y2]]
 
 
 if __name__ == '__main__':
-    b = BlankBuilder()
+    b = BlankGenerator()
     b.place_fields_row(count=5)
     b.place_fields_row(count=5, numbered=True)
     b.place_fields_row(count=5)
     b.place_fields_row(count=5)
     b.place_fields_row(count=5)
-    b.place_code(code=200)
-    b.blank.save('aaa')
+    b.place_code(code=228)
+    b.blank.save('blanks/demo')
 
     # with open('data.json', 'r') as f:
     # # Читаем данные из файла и преобразуем их в объект Python
