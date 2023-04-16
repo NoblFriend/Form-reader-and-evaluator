@@ -25,11 +25,11 @@ class Configuration:
         def __init__(self, page):
             self.box_size = 9
             self.size = 21 * self.box_size
-            self.top_left = (page.margin, page.margin,
+            self.tl = (page.margin, page.margin,
                              page.margin + self.size, page.margin + self.size)
-            self.top_right = (page.width - self.size - page.margin, page.margin,
+            self.tr = (page.width - self.size - page.margin, page.margin,
                               page.width - page.margin, page.margin + self.size)
-            self.bot_left = (page.margin, page.height - self.size - page.margin,
+            self.bl = (page.margin, page.height - self.size - page.margin,
                              page.margin + self.size, page.height - page.margin)
 
     def __init__(self):
