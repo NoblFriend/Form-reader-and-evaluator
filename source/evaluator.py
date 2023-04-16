@@ -68,12 +68,12 @@ class MatchProblem(Problem):
         return round(self.evaluate_pts(evl_ans)/self.evaluate_pts(self.ref_ans) * self.max_pts)
 
 class Evaluator:
-    problem_list: list[Problem]
+    problem_list: list
 
     def __init__(self, *args: Problem) -> None:
         self.problem_list = args
 
-    def eval_list(self, evl_list: list[str]) -> list[int]:
+    def eval_list(self, evl_list: list) -> list:
         pts_list = []
         for ans, pr in zip(evl_list, self.problem_list):
             pts_list.append(pr.evaluate(ans.strip(' ')))
