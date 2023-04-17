@@ -1,7 +1,6 @@
 import unittest
 import numpy as np
 import pandas as pd
-import string
 import sys
 sys.path.append('../')
 from source.evaluator import Problem, SortProblem, MatchProblem, Evaluator

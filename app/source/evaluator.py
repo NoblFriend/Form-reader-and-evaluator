@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import string
 
 class Problem:
     def __init__(self, ref_ans:str, max_pts: int) -> None:
