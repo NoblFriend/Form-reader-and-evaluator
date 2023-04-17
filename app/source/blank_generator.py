@@ -3,7 +3,7 @@ import numpy as np
 import qrcode
 import json
 
-from config import config
+from app.source.config import config
 
 class Blank:
     def __init__(self) -> None:

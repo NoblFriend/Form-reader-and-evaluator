@@ -2,7 +2,7 @@ import json
 import cv2
 import numpy as np
 import pandas as pd
-from config import config
+from app.source.config import config
 from tensorflow.keras.models import load_model
 
 
