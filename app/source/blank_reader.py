@@ -23,14 +23,12 @@ class BlankReader:
         self._cur_letters = dict()
         self._cur_canvas = cv2.resize(cv2.imread(
             f'{path}.png'), (config.page.width, config.page.height))
-        # cv2.imshow('a', self._cur_canvas)
-        # cv2.waitKey()
 
     def _save_blank(self, path):
         cv2.imwrite(f'{path}_processed.png', self._cur_canvas)
 
     def _recover_blank(self):
-        retval, data, points, aaaaa = cv2.QRCodeDetector(
+        retval, data, points, _ = cv2.QRCodeDetector(
         ).detectAndDecodeMulti(self._cur_canvas)
         unrecognized = False
         if (not retval):
@@ -48,16 +46,25 @@ class BlankReader:
 
         # if only 2 recognized will be implemented
 
-        self._cur_canvas = cv2.warpAffine(src=self._cur_canvas,
-                                          M=cv2.getAffineTransform(src=np.float32([self._cur_coords['QR']['bl'][1],
-                                                                                   self._cur_coords['QR']['tl'][1],
-                                                                                   self._cur_coords['QR']['tr'][1]]),
-                                                                   dst=np.float32([self._ref_coords['QR']['bl'][1],
-                                                                                   self._ref_coords['QR']['tl'][1],
-                                                                                   self._ref_coords['QR']['tr'][1]])),
-                                          dsize=(config.page.width,
-                                                 config.page.height),
-                                          flags=cv2.INTER_LINEAR)
+        self._cur_canvas = cv2.warpAffine(
+            src=self._cur_canvas,
+            M=cv2.getAffineTransform(
+                src=np.float32([
+                    self._cur_coords['QR']['bl'][1],
+                    self._cur_coords['QR']['tl'][1],
+                    self._cur_coords['QR']['tr'][1]
+                ]),
+                dst=np.float32([
+                    self._ref_coords['QR']['bl'][1],
+                    self._ref_coords['QR']['tl'][1],
+                    self._ref_coords['QR']['tr'][1]
+                ])),
+            dsize=(
+                config.page.width,
+                config.page.height
+            ),
+            flags=cv2.INTER_LINEAR
+        )
 
     def _get_corners_from_box(self, box):
         return box[0][0], box[0][1], box[1][0], box[1][1]
@@ -139,7 +146,7 @@ class BlankReader:
                     corners=self._get_corners_from_box(box),
                     delta=3 * self._ref_coords['thickness']
                 )
-                
+
                 nearest_contour = self._find_nearest_contour(
                     box=box,
                     contours=self._contours_from_roi(wide_roi)
