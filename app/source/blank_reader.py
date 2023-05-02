@@ -108,7 +108,7 @@ class BlankReader:
         return nearest_contour
 
     def _make_squared(self, img, size):
-        h, w, _ = img.shape
+        h, w = img.shape
 
         if h > w:
             m1 = (h-w)//2
@@ -157,7 +157,7 @@ class BlankReader:
                         roi=self._roi_by_wh(
                             canvas=wide_roi,
                             corner_wh=cv2.boundingRect(nearest_contour),
-                            delta=int(self._ref_coords['thickness'])*2
+                            delta=-int(self._ref_coords['thickness'])*2
                         )
                     ).astype("float32") / 255.0,
                     axis=-1
