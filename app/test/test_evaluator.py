@@ -19,6 +19,11 @@ class TestProblem(unittest.TestCase):
             
             
 class TestSortProblem(unittest.TestCase):
+
+    def test_evaluate_share_longer_evaluated_answer(self):
+        problem = SortProblem(ref_ans='ABCDE', max_pts=10, min_share=0.5)
+        with self.assertRaises(ValueError):
+            problem.evaluate_share('ABCDEFGH')
     
     def test_evaluate_share(self):
         problem = SortProblem(ref_ans='ABCDE', max_pts=10, min_share=0.5)
@@ -27,7 +32,15 @@ class TestSortProblem(unittest.TestCase):
         self.assertEqual(problem.evaluate_share('BCDEA'),  6/10)
         self.assertEqual(problem.evaluate_share('ADCBE'),  7/10)
         self.assertEqual(problem.evaluate_share('EDCBA'),  0/10)
-        # дублирование
+    
+    def test_evaluate_share_duplicates(self):
+        problem = SortProblem(ref_ans='ABCDE', max_pts=10, min_share=0.5)
+        self.assertEqual(problem.evaluate_share('AAAAA'),  0/10)
+        self.assertEqual(problem.evaluate_share('AABBB'),  1/10)
+        self.assertEqual(problem.evaluate_share('AABAB'),  0/10)
+        self.assertEqual(problem.evaluate_share('ABCDE'), 10/10)
+        self.assertEqual(problem.evaluate_share('ABCDE'), 10/10)
+        self.assertEqual(problem.evaluate_share('ABEDE'),  5/10)
     
     def test_evaluate(self):
         problem = SortProblem(ref_ans='ABCDE', max_pts=5, min_share=0.5)
