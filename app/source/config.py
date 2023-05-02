@@ -31,7 +31,6 @@ class Configuration:
     def __init__(self):
         self.page = self.Page()
         self.fields = self.Fields()
-        # self.font = self.Font()
         self.qr = self.QR(self.page)
 
 

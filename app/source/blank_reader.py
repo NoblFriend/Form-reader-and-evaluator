@@ -174,9 +174,6 @@ class BlankReader:
                 self._cur_predictions[row_key][box_key] = dict(
                     {'pred':  round(float(np.max(pred)), 2), 'ans':  label_names[np.argmax(pred)]})
 
-        # with open('dump/pred.json', 'w') as f:
-        #     json.dump(self._cur_predictions, f, indent=4)
-
     def recognize_answers(self, path):
         self._set_blank(path)
         try:

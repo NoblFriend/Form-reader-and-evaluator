@@ -48,7 +48,6 @@ class SetManager:
         reader.save_data(path)
 
         shutil.rmtree(f'{path}scans')
-        # print(reader.recognized_data)
 
     def get_results(self, set_name):
         path = f'{self.path}{set_name}/'

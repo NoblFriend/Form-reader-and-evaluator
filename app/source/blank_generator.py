@@ -44,8 +44,6 @@ class BlankGenerator:
             json.dump(self._coords, f, indent=4)
 
     def _draw_field(self, pos, shift_x=0, numbered=False) -> None:
-        # x_step = config.fields.box_size + config.fields.box_spacing
-        # y_step = config.fields.box_size + config.fields.row_spacing
         row = f'Row {self._fields_rows_count + 1}'
         box = f'Box {pos+1}'
         self._coords['Fields'][row][box] = graphics.draw.rectangle(
@@ -101,7 +99,7 @@ class BlankGenerator:
             x1, y1, x2, y2 = qr_coord
             self._coords['QR'][pos] = [[x1, y1], [x2, y2]]
         
-        # self.dump_data(path)
+        self.dump_data(path)
 
         for code in codes:
             product = self._product.copy()
@@ -118,8 +116,7 @@ class BlankGenerator:
                     coord=qr_coord,
                     data=f'{pos}|{code}'
                 )
-            # product.save(f'{path}/blanks/{code}')
-            product.save(f'demo/blank_{code}')
+            product.save(f'{path}/blanks/{code}')
 
 
 def main():

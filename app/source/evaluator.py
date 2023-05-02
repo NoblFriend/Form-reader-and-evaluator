@@ -25,8 +25,8 @@ class SortProblem(Problem):
         '''
         Evaluate answer share of correct pairs of answers
         '''
-        # if len(evl_ans) > len(self.ref_ans):
-        #     raise ValueError('evaluated answer is longer that reference answer') 
+        if len(evl_ans) > len(self.ref_ans):
+            raise ValueError('evaluated answer is longer that reference answer') 
         
 
         def get_pairs_from_array(array : np.ndarray) -> set:
