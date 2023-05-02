@@ -1,4 +1,3 @@
-import cv2
 
 
 class Configuration:
@@ -14,12 +13,9 @@ class Configuration:
             self.row_spacing = 60
             self.box_size = 70
             self.box_spacing = 20
+            self.x_step = self.box_size + self.box_spacing
+            self.y_step = self.box_size + self.row_spacing
 
-    class Font:
-        def __init__(self):
-            self.style = cv2.FONT_HERSHEY_DUPLEX
-            self.base_height = 22
-            self.base_width = 20
 
     class QR:
         def __init__(self, page):
@@ -35,7 +31,7 @@ class Configuration:
     def __init__(self):
         self.page = self.Page()
         self.fields = self.Fields()
-        self.font = self.Font()
+        # self.font = self.Font()
         self.qr = self.QR(self.page)
 
 
