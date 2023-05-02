@@ -54,7 +54,7 @@ class Drawer:
             )
 
             return {
-                'coords': [top_left, bot_right]
+                'coords': [top_left.tolist(), bot_right.tolist()]
             }
 
     class Text:
