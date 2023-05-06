@@ -1,0 +1,17 @@
+{
+    "Codes": {
+        "09": 1,
+        "10": 1,
+        "11": 1
+    },
+    "Problems": [
+        {
+            "ans": "ABCDE",
+            "type": "SORT"
+        },
+        {
+            "ans": "ABCDE",
+            "type": "MATCH"
+        }
+    ]
+}
