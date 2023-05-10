@@ -68,12 +68,13 @@ class SetManager:
 
         pdf_files = [f for f in os.listdir(input_folder) if f.endswith('.pdf')]
         cnt = 0
+        images = list()
         for pdf_file in pdf_files:
-            images = convert_from_path(f'{input_folder}{pdf_file}')
+            images.extend(convert_from_path(f'{input_folder}{pdf_file}'))
 
-            for image in images:
-                image.save(f'{output_folder}{cnt}.png', 'PNG')
-                cnt+=1
+        for image in images:
+            image.save(f'{output_folder}{cnt}.png', 'PNG')
+            cnt+=1
 
         reader = SingleAnswerBlankReader(path)
         for i in range(len(images)):
