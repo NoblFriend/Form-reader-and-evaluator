@@ -8,8 +8,8 @@ from app.source.set_manager import SetManager
 
 if __name__ == '__main__':
     sm = SetManager(f'{os.getcwd()}/sets/')
-    name = sys.argv[1]
-    action = sys.argv[2]
+    name = sys.argv[2]
+    action = sys.argv[1]
     if action == 'create':
         sm.create_set(name)
     elif action == 'generate':
@@ -20,4 +20,4 @@ if __name__ == '__main__':
         sm.get_results(name)
     else:
         print(
-            f"Invalid action: {action}. Allowed actions: create, get_answers, get_results")
+            f"Invalid action: {action}. Allowed actions: create, generate, recognize, grade")
