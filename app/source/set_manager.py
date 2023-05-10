@@ -1,6 +1,6 @@
 import json
 from app.source.blank_generator import BlankGenerator
-from app.source.blank_reader import BlankReader
+from app.source.blank_reader import BlankReader, SingleAnswerBlankReader
 import app.source.evaluator as eval
 from PIL import Image
 import os
@@ -19,6 +19,7 @@ class SetManager:
         if not os.path.isdir(path):
             os.makedirs(path)
         data = {
+            "Type": "multiple",
             "Codes": {"09": 1, "10": 1, "11": 1},
             "Problems": [
                 {"ans": "ABCDE", "type": "SORT"},
@@ -40,8 +41,13 @@ class SetManager:
         blank_generator = BlankGenerator()
         os.mkdir(f'{path}blanks')
         for problem in description['Problems']:
-            blank_generator.place_fields_row(
-                count=len(problem['ans']), numbered=(problem['type'] == 'MATCH'))
+            if description['Type'] == 'multiple':
+                blank_generator.place_fields_row(
+                    count=len(problem['ans']), numbered=(problem['type'] == 'MATCH'))
+            elif description['Type'] == 'single':
+                blank_generator.place_fields_row(
+                    count=description['Answers']
+                )
         blank_generator.place_codes(codes, f'{path}')
 
         images = [Image.open(f'{path}blanks/{code}.png') for code in codes]
@@ -58,7 +64,7 @@ class SetManager:
         for i, image in enumerate(images):
             image.save(f'{path}scans/{i}.png', 'PNG')
 
-        reader = BlankReader(path)
+        reader = SingleAnswerBlankReader(path)
         for i in range(len(images)):
             reader.recognize_answers(f'{path}scans/{i}')
         reader.save_data(path)
@@ -71,7 +77,11 @@ class SetManager:
             description = json.load(f)
         problems = list()
         for problem in description['Problems']:
-            if problem['type'] == 'MATCH':
+            if description['Type'] == 'single':
+                problems.append(eval.MarkProblem(
+                    ref_ans=problem, max_pts=1)
+                )
+            elif problem['type'] == 'MATCH':
                 problems.append(eval.MatchProblem(
                     ref_ans=problem['ans'], max_pts=5))
             elif problem['type'] == 'SORT':
@@ -79,6 +89,7 @@ class SetManager:
                     ref_ans=problem['ans'], max_pts=5, min_share=0.5))
             else:
                 raise ValueError(f'Unknown type {problem["type"]}')
+       
         ans_table = pd.read_csv(f'{path}table_code_answers.csv')
         eval.Evaluator(
             *problems).eval_table(ans_table).to_csv(f'{path}table_results.csv', index=False)

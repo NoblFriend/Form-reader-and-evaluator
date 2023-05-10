@@ -17,6 +17,14 @@ class Problem:
             'can\'t evaluate share for this problem type')
 
 
+class MarkProblem(Problem):
+    def __init__(self, ref_ans: str, max_pts: int) -> None:
+        super().__init__(ref_ans, max_pts)
+
+    def evaluate(self, evl_ans: str) -> int:
+        return (evl_ans == self.ref_ans) * self.max_pts
+
+
 class SortProblem(Problem):
     def __init__(self, ref_ans: str, max_pts: int, min_share: float = 0.5) -> None:
         super().__init__(ref_ans, max_pts)
@@ -89,4 +97,12 @@ class Evaluator:
             ans = evl_table.iloc[row_index][-len(self.problem_list):]
             pts_table.iloc[row_index, -
                            len(self.problem_list):] = self.eval_list(ans)
+        pts_table['sum'] = pts_table.iloc[
+            :, -len(self.problem_list):
+        ].sum(axis=1)
+        pts_table.insert(
+            loc=pts_table.columns.get_loc('q1'),
+            column='sum',
+            value=pts_table.pop('sum')
+        )
         return pts_table

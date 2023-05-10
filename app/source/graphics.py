@@ -17,12 +17,12 @@ class Drawer:
     main_color: int = 0
     second_color: int = 100
 
-    class Rectangle:
+    class Box:
         thickness: int
         line_type: int
         color: int
 
-        def __init__(self,  color: int, thickness: int = 5, line_type: int = cv2.LINE_4):
+        def __init__(self,  color: int, thickness: int = config.fields.box_thickness, line_type: int = cv2.LINE_4):
             self.thickness = thickness
             self.line_type = line_type
             self.color = color
@@ -75,10 +75,10 @@ class Drawer:
 
         def __call__(self, canvas, text: str, x: int, y: int, font_scale: int, pos: str = 'bot', color_style: str = 'main', thickness: int = None) -> Any:
             point: tuple
-            letter_height: int = font_scale * self.font_height
-            letter_width: int = font_scale * self.font_width
+            letter_height: int = int(font_scale * self.font_height)
+            letter_width: int = int(font_scale * self.font_width)
             if not thickness:
-                thickness = font_scale
+                thickness = int(font_scale)
             if pos == 'bot':
                 point = (x, y)
             elif pos == 'top':
@@ -134,7 +134,7 @@ class Drawer:
             main_color=self.main_color,
             second_color=self.second_color
         )
-        self.rectangle = self.Rectangle(
+        self.box = self.Box(
             color=self.main_color
         )
         self.qr = self.QR()

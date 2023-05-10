@@ -31,6 +31,8 @@ class BlankGenerator:
     def reset(self) -> None:
         self._coords = {'Fields': dict()}
         self._fields_rows_count = 0
+        self.shift_x = (config.page.width - 2 * config.page.margin - config.fields.x_step * 22) // 2
+        self._question_num = 0
         self._product = Blank()
 
     @property
@@ -44,9 +46,9 @@ class BlankGenerator:
             json.dump(self._coords, f, indent=4)
 
     def _draw_field(self, pos, shift_x=0, numbered=False) -> None:
-        row = f'Row {self._fields_rows_count + 1}'
+        row = f'Row {self._question_num + 1}'
         box = f'Box {pos+1}'
-        self._coords['Fields'][row][box] = graphics.draw.rectangle(
+        self._coords['Fields'][row][box] = graphics.draw.box(
             canvas=self._product.canvas,
             top_left_x=config.page.margin +
             pos * config.fields.x_step + shift_x,
@@ -54,7 +56,7 @@ class BlankGenerator:
             self._fields_rows_count * config.fields.y_step,
             size=config.fields.box_size
         )['coords']
-        self._coords['thickness'] = graphics.draw.rectangle.thickness
+        self._coords['thickness'] = graphics.draw.box.thickness
 
         if (numbered):
             graphics.draw.text(
@@ -68,23 +70,32 @@ class BlankGenerator:
             )
 
     def _draw_row_num(self) -> int:
-        return graphics.draw.text(
+        text=str(self._question_num + 1) + '.'
+        font_scale=0.5*config.fields.box_size/graphics.draw.text.font_height
+        graphics.draw.text(
             canvas=self._product.canvas,
-            text=str(self._fields_rows_count + 1) + '.',
-            x=config.page.margin,
+            text=text,
+            x=config.page.margin + self.shift_x -
+            int(graphics.draw.text.font_width*font_scale*len(text)),
             y=config.page.header +
             self._fields_rows_count * config.fields.y_step +
             config.fields.box_size//2,
-            font_scale=2,
+            font_scale=0.5*config.fields.box_size/graphics.draw.text.font_height,
+            thickness=1,
             pos='mid'
         )['width']
+        return 0
 
     def place_fields_row(self, count, numbered=False) -> None:
-        shift_x = self._draw_row_num()
-        self._coords['Fields'][f'Row {self._fields_rows_count + 1}'] = dict()
+        self._draw_row_num()
+        self._coords['Fields'][f'Row {self._question_num + 1}'] = dict()
         for pos in range(count):
-            self._draw_field(pos, shift_x, numbered)
+            self._draw_field(pos, self.shift_x, numbered)
         self._fields_rows_count += 1
+        self._question_num += 1
+        if self._fields_rows_count*config.fields.y_step + config.page.header + config.page.footer > config.page.height:
+            self._fields_rows_count = 0
+            self.shift_x += config.fields.x_step * 6
         pass
 
     def place_info(self) -> None:
