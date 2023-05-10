@@ -43,22 +43,33 @@ class BlankReader:
                 else:
                     raise RuntimeError(
                         f'Too many (at least 2) unrecognized qr codes on {self._path}')
+                    pass
 
-        # if only 2 recognized will be implemented
+        src_points = []
+        dst_points = []
+        for pos in ['bl', 'tl', 'tr']:
+            if pos in self._cur_coords['QR']:
+                src_points.append(self._cur_coords['QR'][pos][1])
+                dst_points.append(self._ref_coords['QR'][pos][1])
+
+        # if len(src_points) == 1:
+        #     src_points.append(
+        #         self._cur_coords['QR'][data[0].split('|')[0]][2])
+        #     dst_points.append(
+        #         self._ref_coords['QR'][data[0].split('|')[0]][2])
+
+        if len(src_points) == 2:
+            src_points.append(
+                self._cur_coords['QR'][data[0].split('|')[0]][0])
+            dst_points.append(
+                self._ref_coords['QR'][data[0].split('|')[0]][0])
 
         self._cur_canvas = cv2.warpAffine(
             src=self._cur_canvas,
             M=cv2.getAffineTransform(
-                src=np.float32([
-                    self._cur_coords['QR']['bl'][1],
-                    self._cur_coords['QR']['tl'][1],
-                    self._cur_coords['QR']['tr'][1]
-                ]),
-                dst=np.float32([
-                    self._ref_coords['QR']['bl'][1],
-                    self._ref_coords['QR']['tl'][1],
-                    self._ref_coords['QR']['tr'][1]
-                ])),
+                src=np.float32(src_points),
+                dst=np.float32(dst_points)
+            ),
             dsize=(
                 config.page.width,
                 config.page.height
@@ -227,7 +238,7 @@ class SingleAnswerBlankReader(BlankReader):
             self._recover_blank()
         except:
             print(f'ERROR file: {path}')
-            raise
+            # raise
         else:
             self._find_boxes()
             self._recognize_letters()
@@ -235,7 +246,8 @@ class SingleAnswerBlankReader(BlankReader):
             self.recognized_data[self._cur_code] = self._cur_predictions
             # self.table_code_answers.loc[self._cur_code] = [''.join(
             #     [box['ans'] for box in row.values()]) for row in self._cur_predictions.values()]
-            self.table_code_answers.loc[self._cur_code] = [row['ans'] for row in self._cur_predictions.values()]
+            self.table_code_answers.loc[self._cur_code] = [
+            row['ans'] for row in self._cur_predictions.values()]
 
 
 if __name__ == '__main__':
