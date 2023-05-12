@@ -30,20 +30,15 @@ class BlankReader:
     def _recover_blank(self):
         retval, data, points, _ = cv2.QRCodeDetector(
         ).detectAndDecodeMulti(self._cur_canvas)
-        unrecognized = False
+        unrecognized = 0
         if (not retval):
-            raise RuntimeError('cannot detect qr-codes')
+            raise RuntimeError(f'No one qrcode recognize on blank with code UNKNOWN')
         for d, p in zip(data, points):
             try:
                 self._cur_coords['QR'][d.split('|')[0]] = [p[0], p[2]]
                 self._cur_code = d.split('|')[1]
             except:
-                if (not unrecognized):
-                    unrecognized = True
-                else:
-                    raise RuntimeError(
-                        f'Too many (at least 2) unrecognized qr codes on {self._path}')
-                    pass
+                pass
 
         src_points = []
         dst_points = []
@@ -52,11 +47,9 @@ class BlankReader:
                 src_points.append(self._cur_coords['QR'][pos][1])
                 dst_points.append(self._ref_coords['QR'][pos][1])
 
-        # if len(src_points) == 1:
-        #     src_points.append(
-        #         self._cur_coords['QR'][data[0].split('|')[0]][2])
-        #     dst_points.append(
-        #         self._ref_coords['QR'][data[0].split('|')[0]][2])
+        if len(src_points) == 1:
+            code = data[0].split('|')[1]
+            raise RuntimeError(f'Only one qrcode recognize on blank with code {code}')
 
         if len(src_points) == 2:
             src_points.append(
@@ -236,9 +229,9 @@ class SingleAnswerBlankReader(BlankReader):
         self._set_blank(path)
         try:
             self._recover_blank()
-        except:
-            print(f'ERROR file: {path}')
-            # raise
+        except Exception as e:
+            print(f'ERROR \nfile: {path}')
+            print(f'error: {str(e)}')
         else:
             self._find_boxes()
             self._recognize_letters()
