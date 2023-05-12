@@ -4201,6 +4201,1908 @@
             ]
         }
     },
+    "C-01": {
+        "Row 1": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 2": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 3": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 4": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 5": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 6": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 7": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 8": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 9": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 10": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 11": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 12": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 13": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 14": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 15": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 16": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 17": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 18": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 19": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 20": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 21": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 22": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 23": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 24": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 25": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 26": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 27": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 28": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 29": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 30": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 31": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 32": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 33": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 34": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 35": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 36": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 37": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 38": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 39": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 40": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 41": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 42": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 43": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 44": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 45": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 46": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 47": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 48": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 49": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 50": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 51": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 52": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 53": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 54": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 55": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 56": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 57": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 58": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 59": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 60": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 61": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 62": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 63": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 64": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 65": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 66": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 67": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 68": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 69": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 70": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 71": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 72": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 73": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 74": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 75": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 76": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 77": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 78": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 79": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 80": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 81": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 82": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 83": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 84": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 85": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 86": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 87": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 88": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 89": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 90": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 91": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 92": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 93": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 94": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 95": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 96": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 97": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 98": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 99": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 100": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        }
+    },
     "C-00": {
         "Row 1": {
             "Box 1": {
@@ -6101,6 +8003,3810 @@
                 "brightness": 320.0
             },
             "ans": "D"
+        }
+    },
+    "C-03": {
+        "Row 1": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 2": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 3": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 4": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 5": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 6": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 7": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 8": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 9": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 10": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 11": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 12": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 13": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 14": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 15": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 16": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 17": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 18": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 19": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 20": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 21": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 22": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 23": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 24": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 25": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 26": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 27": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 28": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 29": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 30": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 31": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 32": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 33": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 34": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 35": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 36": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 37": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 38": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 39": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 40": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 41": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 42": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 43": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 44": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 45": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 46": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 47": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 48": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 49": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 50": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 51": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 52": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 53": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 54": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 55": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 56": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 57": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 58": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 59": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 60": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 61": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 62": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 63": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 64": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 65": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 66": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 67": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 68": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 69": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 70": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 71": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 72": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 73": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 74": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 75": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 76": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 77": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 78": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 79": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 80": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 81": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 82": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 83": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 84": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 85": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 86": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 87": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 88": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 89": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 90": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 91": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 92": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 93": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 94": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 95": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 96": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 97": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 98": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 99": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 100": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        }
+    },
+    "C-04": {
+        "Row 1": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 2": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 3": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 4": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 5": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 6": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 7": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 8": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 9": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 10": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 11": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 12": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 13": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 14": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 15": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 16": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 17": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 18": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 19": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 20": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 21": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 22": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 23": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 24": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 25": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 26": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 27": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 28": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 29": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 30": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 31": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 32": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 33": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 34": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 35": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 36": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 37": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 38": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 39": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 40": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 41": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 42": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 43": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 44": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 45": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 46": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 47": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 48": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 49": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 50": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 51": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 52": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 53": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 54": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 55": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 56": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 57": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 58": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 59": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 60": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 61": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 62": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 63": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 64": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 65": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 66": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 67": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 68": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 69": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 70": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 71": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 72": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 73": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 74": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 75": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 76": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 77": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 78": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 79": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 80": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 81": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 82": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 83": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 84": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 85": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 86": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 87": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 88": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 89": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 90": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 91": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 92": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 93": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 94": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 95": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 96": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 97": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 98": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 99": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
+        },
+        "Row 100": {
+            "Box 1": {
+                "item": "A",
+                "brightness": 170.0
+            },
+            "Box 2": {
+                "item": "B",
+                "brightness": 170.0
+            },
+            "Box 3": {
+                "item": "C",
+                "brightness": 170.0
+            },
+            "Box 4": {
+                "item": "D",
+                "brightness": 170.0
+            },
+            "ans": "A"
         }
     }
 }
