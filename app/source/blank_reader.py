@@ -20,7 +20,7 @@ class BlankReader:
 
     def _set_blank(self, path):
         self._cur_coords = {'QR': dict()}
-        self._cur_letters = dict()
+        self._cur_answers = dict()
         self._cur_canvas = cv2.resize(cv2.imread(
             f'{path}.png'), (config.page.width, config.page.height))
 
@@ -43,22 +43,33 @@ class BlankReader:
                 else:
                     raise RuntimeError(
                         f'Too many (at least 2) unrecognized qr codes on {self._path}')
+                    pass
 
-        # if only 2 recognized will be implemented
+        src_points = []
+        dst_points = []
+        for pos in ['bl', 'tl', 'tr']:
+            if pos in self._cur_coords['QR']:
+                src_points.append(self._cur_coords['QR'][pos][1])
+                dst_points.append(self._ref_coords['QR'][pos][1])
+
+        # if len(src_points) == 1:
+        #     src_points.append(
+        #         self._cur_coords['QR'][data[0].split('|')[0]][2])
+        #     dst_points.append(
+        #         self._ref_coords['QR'][data[0].split('|')[0]][2])
+
+        if len(src_points) == 2:
+            src_points.append(
+                self._cur_coords['QR'][data[0].split('|')[0]][0])
+            dst_points.append(
+                self._ref_coords['QR'][data[0].split('|')[0]][0])
 
         self._cur_canvas = cv2.warpAffine(
             src=self._cur_canvas,
             M=cv2.getAffineTransform(
-                src=np.float32([
-                    self._cur_coords['QR']['bl'][1],
-                    self._cur_coords['QR']['tl'][1],
-                    self._cur_coords['QR']['tr'][1]
-                ]),
-                dst=np.float32([
-                    self._ref_coords['QR']['bl'][1],
-                    self._ref_coords['QR']['tl'][1],
-                    self._ref_coords['QR']['tr'][1]
-                ])),
+                src=np.float32(src_points),
+                dst=np.float32(dst_points)
+            ),
             dsize=(
                 config.page.width,
                 config.page.height
@@ -114,12 +125,12 @@ class BlankReader:
             m1 = (h-w)//2
             m2 = h-w - m1
             square_img = cv2.copyMakeBorder(
-                square_img, 0, 0, m1, m2, borderType=cv2.BORDER_CONSTANT, value=255)
+                img, 0, 0, m1, m2, borderType=cv2.BORDER_CONSTANT, value=255)
         elif w > h:
             m1 = (w-h)//2
             m2 = w-h - m1
             square_img = cv2.copyMakeBorder(
-                square_img, m1, m2, 0, 0, borderType=cv2.BORDER_CONSTANT, value=255)
+                img, m1, m2, 0, 0, borderType=cv2.BORDER_CONSTANT, value=255)
         else:
             square_img = img
 
@@ -139,7 +150,7 @@ class BlankReader:
 
     def _find_boxes(self):
         for row_key, row in self._ref_coords['Fields'].items():
-            self._cur_letters[row_key] = dict()
+            self._cur_answers[row_key] = dict()
             for box_key, box in row.items():
                 wide_roi = self._roi_by_corners(
                     canvas=self._cur_canvas,
@@ -152,7 +163,7 @@ class BlankReader:
                     contours=self._contours_from_roi(wide_roi)
                 )
 
-                self._cur_letters[row_key][box_key] = np.expand_dims(
+                self._cur_answers[row_key][box_key] = np.expand_dims(
                     self._prepare_roi_to_recognition(
                         roi=self._roi_by_wh(
                             canvas=wide_roi,
@@ -166,7 +177,7 @@ class BlankReader:
     def _recognize_letters(self):
         self._cur_predictions = dict()
         label_names = "ABCDEFGHIJKLM_"
-        for row_key, row in self._cur_letters.items():
+        for row_key, row in self._cur_answers.items():
             self._cur_predictions[row_key] = dict()
             for box_key, box in row.items():
                 array = np.array([box], dtype="float32")
@@ -193,6 +204,50 @@ class BlankReader:
         with open(f'{path}recognized.json', 'w') as f:
             json.dump(self.recognized_data, f, indent=4)
         self.table_code_answers.to_csv(f'{path}table_code_answers.csv')
+
+
+class SingleAnswerBlankReader(BlankReader):
+    def __init__(self, path, info_file='data.json') -> None:
+        info_file = f'{path}{info_file}'
+        with open(info_file, 'r') as f:
+            self._ref_coords = json.load(f)
+        self.recognized_data = dict()
+        self.recognized_data['Fields'] = self._ref_coords['Fields']
+        self.table_code_answers = pd.DataFrame(
+            columns=[f'q{i+1}' for i in range(len(self._ref_coords['Fields']))])
+        self.table_code_answers.index.name = 'code'
+
+    def _recognize_letters(self):
+        self._cur_predictions = dict()
+        for row_key, row in self._cur_answers.items():
+            self._cur_predictions[row_key] = dict()
+            for i, (box_key, box) in enumerate(row.items()):
+                self._cur_predictions[row_key][box_key] = dict({
+                    'item':  chr(ord('A') + i),
+                    'brightness': round(cv2.sumElems(box)[0], -1)
+                })
+
+            self._cur_predictions[row_key]['ans'] = max(
+                self._cur_predictions[row_key].values(),
+                key=lambda item: item['brightness']
+            )['item']
+
+    def recognize_answers(self, path):
+        self._set_blank(path)
+        try:
+            self._recover_blank()
+        except:
+            print(f'ERROR file: {path}')
+            # raise
+        else:
+            self._find_boxes()
+            self._recognize_letters()
+
+            self.recognized_data[self._cur_code] = self._cur_predictions
+            # self.table_code_answers.loc[self._cur_code] = [''.join(
+            #     [box['ans'] for box in row.values()]) for row in self._cur_predictions.values()]
+            self.table_code_answers.loc[self._cur_code] = [
+            row['ans'] for row in self._cur_predictions.values()]
 
 
 if __name__ == '__main__':
