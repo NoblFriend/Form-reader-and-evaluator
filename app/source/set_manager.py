@@ -1,5 +1,5 @@
 import json
-from app.source.blank_generator import BlankGenerator
+from app.source.generator import BlankGenerator
 from app.source.blank_reader import BlankReader
 import app.source.evaluator as eval
 from PIL import Image
