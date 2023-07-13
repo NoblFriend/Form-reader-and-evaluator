@@ -1,7 +1,7 @@
 """Copyright 2023 Alexey Rebrikov
 rebrikov-av@phystech.com
 """
-import os
+
 import argparse
 
 from app.source.set_manager import SetManager
@@ -14,7 +14,7 @@ actions = [
     ]
 
 if __name__ == '__main__':
-    sm = SetManager(f'{os.getcwd()}/sets/')
+    sm = SetManager()
     ap = argparse.ArgumentParser()
     ap.add_argument("-m", 
                     metavar='mode', 
@@ -27,7 +27,6 @@ if __name__ == '__main__':
                     required=True,
                     help=f'problem set name at dir ./sets/')
     args = vars(ap.parse_args())
-    print(args)
 
     
     if args['m'] == 'create':
