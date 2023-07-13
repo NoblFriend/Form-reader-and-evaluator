@@ -19,36 +19,46 @@ class SetManager:
         if not os.path.isdir(path):
             os.makedirs(path)
         data = {
-            "Codes": {"09": 1, "10": 1, "11": 1},
-            "Problems": [
-                {"ans": "ABCDE", "type": "SORT"},
-                {"ans": "ABCDE", "type": "MATCH"}
+            "Codes": {
+                "09-": 1,
+                "10-": 1,
+                "11-": 1
+            },
+            "Sections": [
+                {
+                    "Questions": [
+                        {
+                            "ans": "ABCDE",
+                            "type": "SORT"
+                        },
+                        {
+                            "ans": "ABCDE",
+                            "type": "MATCH"
+                        }
+                    ]
+                }
             ]
         }
         with open(f"{path}description.json", "w") as f:
             json.dump(data, f, indent=4)
 
     def generate_set(self, set_name):
-        path = f'{self.path}{set_name}/'
-        with open(f'{path}description.json', 'r') as f:
-            description = json.load(f)
+        set_path = os.path.join(self.path, set_name)
+        blanks_path = os.path.join(set_path, 'blanks')
+        os.mkdir(blanks_path)
+        bg = BlankGenerator(set_path)
+        bg.generate()
 
-        codes = list()
-        for prefix, count in description['Codes'].items():
-            codes.extend([f'{prefix}-{num:02}' for num in range(count)])
+        images = [
+            Image.open(os.path.join(blanks_path,f'{blank}.png')) for blank in bg.keys
+        ]
 
-        blank_generator = BlankGenerator()
-        os.mkdir(f'{path}blanks')
-        for problem in description['Problems']:
-            blank_generator.place_fields_row(
-                count=len(problem['ans']), numbered=(problem['type'] == 'MATCH'))
-        blank_generator.place_codes(codes, f'{path}')
+        images[0].save(
+            os.path.join(set_path, 'blanks.pdf'),
+            save_all=True,
+            append_images=images[1:])
 
-        images = [Image.open(f'{path}blanks/{code}.png') for code in codes]
-
-        images[0].save(f'{path}blanks.pdf', save_all=True,
-                       append_images=images[1:])
-        shutil.rmtree(f'{path}blanks')
+        shutil.rmtree(blanks_path)
 
     def get_answers(self, set_name):
         path = f'{self.path}{set_name}/'
