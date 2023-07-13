@@ -1,6 +1,7 @@
 import numpy as np
 import app.source.graphics as graphics
 import json
+import os
 
 from app.source.config import config
 
@@ -24,112 +25,179 @@ class Blank:
         return blank_copy
 
 
-class BlankGenerator:
-    def __init__(self) -> None:
-        self.reset()
+class Cell:
+    def __init__(self, size, number, numbered) -> None:
+        self.size = size
+        self.thickness = config.fields.thickness
+        self.number = number + 1
+        self.numbered = numbered
 
-    def reset(self) -> None:
-        self._coords = {'Fields': dict()}
-        self._fields_rows_count = 0
-        self._product = Blank()
-
-    @property
-    def blank(self) -> Blank:
-        product = self._product
-        self.reset()
-        return product
-
-    def dump_data(self, path):
-        with open(f'{path}data.json', 'w') as f:
-            json.dump(self._coords, f, indent=4)
-
-    def _draw_field(self, pos, shift_x=0, numbered=False) -> None:
-        row = f'Row {self._fields_rows_count + 1}'
-        box = f'Box {pos+1}'
-        self._coords['Fields'][row][box] = graphics.draw.rectangle(
-            canvas=self._product.canvas,
-            top_left_x=config.page.margin +
-            pos * config.fields.x_step + shift_x,
-            top_left_y=config.page.header +
-            self._fields_rows_count * config.fields.y_step,
-            size=config.fields.box_size
-        )['coords']
-        self._coords['thickness'] = graphics.draw.rectangle.thickness
-
-        if (numbered):
-            graphics.draw.text(
-                canvas=self._product.canvas,
-                text=str(pos+1),
-                x=self._coords['Fields'][row][box][0][0],
-                y=self._coords['Fields'][row][box][1][1] + 5,
-                font_scale=1,
-                pos='top',
-                color_style='second'
+    def draw(self, drawer: graphics.Drawer, cursor: graphics.Cursor) -> None:
+        cursor.save_pos()
+        if self.numbered:
+            drawer.text(
+                cursor=cursor.move(dy=config.fields.box_size +
+                                   config.fields.number_spacing),
+                text=str(self.number),
+                letter_height=config.fields.number_height,
+                pos='top'
             )
+        cursor.return_pos()
+        self.box = drawer.rectangle(
+            cursor=cursor,
+            size=self.size,
+            thickness=self.thickness
+        )['box']
 
-    def _draw_row_num(self) -> int:
-        return graphics.draw.text(
-            canvas=self._product.canvas,
-            text=str(self._fields_rows_count + 1) + '.',
-            x=config.page.margin,
-            y=config.page.header +
-            self._fields_rows_count * config.fields.y_step +
-            config.fields.box_size//2,
-            font_scale=2,
+    def dump(self) -> list():
+        return self.box
+
+
+class QuestionNumber:
+    def __init__(self, number, height, length) -> None:
+        self.length = length
+        self.height = height
+        self.number = number + 1
+
+    def draw(self, drawer: graphics.Drawer, cursor) -> None:
+        drawer.text(
+            cursor=cursor,
+            text=f'{self.number}.',
+            box_height=self.height,
+            letter_height=int(0.7*self.height),
             pos='mid'
-        )['width']
+        )
 
-    def place_fields_row(self, count, numbered=False) -> None:
-        shift_x = self._draw_row_num()
-        self._coords['Fields'][f'Row {self._fields_rows_count + 1}'] = dict()
-        for pos in range(count):
-            self._draw_field(pos, shift_x, numbered)
-        self._fields_rows_count += 1
-        pass
 
-    def place_info(self) -> None:
-        # will be implemented
-        pass
+class Question:
+    def __init__(self, number, description) -> None:
+        if description["type"] in ["SORT", "MATCH"]:
+            count = len(description["ans"])
+            size = config.fields.box_size
+            numbered = description["type"] == "MATCH"
+        self.number = QuestionNumber(
+            number=number,
+            height=size,
+            length=2
+        )
+        self.cells = [Cell(size, num, numbered) for num in range(count)]
 
-    def place_codes(self, codes, path) -> None:
-        self._coords['QR'] = dict()
-        positions = ['tl', 'tr', 'bl']
-        pos_coords = [config.qr.tl, config.qr.tr, config.qr.bl]
-        for pos, qr_coord in zip(positions, pos_coords):
-            x1, y1, x2, y2 = qr_coord
-            self._coords['QR'][pos] = [[x1, y1], [x2, y2]]
-        
-        self.dump_data(path)
+    def draw(self, drawer: graphics.Drawer, cursor: graphics.Cursor) -> None:
+        cursor.save_pos()
+        self.number.draw(drawer, cursor)
+        for cell in self.cells:
+            cell.draw(drawer, cursor)
+            cursor.move(dx=config.fields.box_spacing)
+        cursor.return_pos()
+        cursor.move(dy=config.fields.y_step)
 
-        for code in codes:
-            product = self._product.copy()
-            graphics.draw.text(
-                canvas=product.canvas,
-                text=str(code).zfill(3),
-                x=400, y=180,
-                font_scale=4,
-                thickness=5
+    def dump(self) -> dict():
+        return {
+            'Metadata': {'thickness': config.fields.thickness},
+            'Cells': [cell.dump() for cell in self.cells]
+        }
+
+
+class Section:
+    def __init__(self, number, description) -> None:
+        self.cursor = graphics.Cursor(config.page.margin, config.page.header)
+        self.questions = [
+            Question(num, desc)for num, desc in enumerate(description["Questions"])
+        ]
+
+    def draw(self, drawer: graphics.Drawer) -> None:
+        for question in self.questions:
+            question.draw(drawer, self.cursor)
+
+    def dump(self) -> dict():
+        return {'Questions': [quest.dump() for quest in self.questions]}
+
+
+class CodeKey:
+    def __init__(self, key) -> None:
+        self.key = key
+
+    def draw(self, drawer: graphics.Drawer) -> None:
+        drawer.text(
+            cursor=graphics.Cursor(400, 180),
+            text=str(self.key),
+            letter_height=100,
+            thickness=5
+        )
+
+
+class Qr:
+    def __init__(self, pos, key) -> None:
+        self.pos = pos
+        self.key = key
+
+    def draw(self, drawer: graphics.Drawer) -> None:
+        drawer.qr(
+            coords=config.qr.coords[self.pos],
+            data=f'{self.pos}|{self.key}'
+        )
+
+
+class Codes:
+    def __init__(self, key) -> None:
+        self.key = CodeKey(key)
+        self.qrs = [Qr(pos, key) for pos in config.qr.coords.keys()]
+
+    def key_gen(desc: dict) -> list:
+        codes = list()
+        for prefix, count in desc.items():
+            codes.extend([
+                f'{prefix}{num:0{len(str(count-1))}}' for num in range(count)
+            ])
+        return codes
+
+    def draw(self, drawer: graphics.Drawer) -> None:
+        self.key.draw(drawer)
+        for qr in self.qrs:
+            qr.draw(drawer)
+
+    def dump() -> dict():
+        return config.qr.coords
+
+
+class BlankGenerator:
+    def __init__(self, path) -> None:
+        self.blank = Blank()
+        self.path = path
+        with open(os.path.join(path, 'description.json'), 'r') as f:
+            description = json.load(f)
+        self.sections = [
+            Section(num, desc) for num, desc in enumerate(description['Sections'])
+        ]
+        self.keys = Codes.key_gen(description['Codes'])
+        self.codes = [
+            Codes(key) for key in self.keys
+        ]
+
+    def draw(self):
+        for section in self.sections:
+            section.draw(
+                drawer=graphics.Drawer(self.blank.canvas)
             )
-            for pos, qr_coord in zip(positions, pos_coords):
-                graphics.draw.qr(
-                    canvas=product.canvas,
-                    coord=qr_coord,
-                    data=f'{pos}|{code}'
-                )
-            product.save(f'{path}/blanks/{code}')
+        for code in self.codes:
+            new_blank = self.blank.copy()
+            code.draw(
+                drawer=graphics.Drawer(new_blank.canvas)
+            )
+            new_blank.save(os.path.join(self.path, 'blanks', code.key.key))
 
+    def dump(self):
+        with open(os.path.join(self.path, 'generator_data.json'), 'w') as f:
+            json.dump(
+                obj={
+                    'Sections': [sect.dump() for sect in self.sections],
+                    'Codes': Codes.dump()
+                },
+                fp=f,
+                indent=4,
+                sort_keys=True
+            )
 
-def main():
-    b = BlankGenerator()
-    b.place_fields_row(count=5)
-    b.place_fields_row(count=5, numbered=True)
-    b.place_fields_row(count=5)
-    b.place_fields_row(count=5)
-    b.place_fields_row(count=5)
-    code = 228
-    b.place_codes(codes=[code], path=None)
-    b.blank.save(f'demo/blank')
-
-
-if __name__ == '__main__':
-    main()
+    def generate(self):
+        self.draw()
+        self.dump()
