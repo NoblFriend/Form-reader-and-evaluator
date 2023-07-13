@@ -1,7 +1,7 @@
 import json
-from app.source.generator import BlankGenerator
-from app.source.blank_reader import BlankReader
-import app.source.evaluator as eval
+from app.source.modules.generator import BlankGenerator
+from app.source.modules.blank_reader import BlankReader
+import app.source.modules.evaluator as eval
 from PIL import Image
 import os
 import shutil

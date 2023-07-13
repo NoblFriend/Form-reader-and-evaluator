@@ -2,7 +2,7 @@ from typing import Any
 import numpy as np
 import cv2
 import qrcode
-from app.source.config import config
+from app.source.utils.config import config
 
 
 def get_canvas(height, width) -> np.ndarray:

@@ -1,9 +1,9 @@
 import numpy as np
-import app.source.graphics as graphics
+import app.source.utils.graphics as graphics
 import json
 import os
 
-from app.source.config import config
+from app.source.utils.config import config
 
 
 class Blank:
