@@ -136,5 +136,5 @@ class BlankReader:
                     df_data[code][column_name] = answers
 
         df = pd.DataFrame.from_dict(df_data, orient='index')
-        df.to_csv(os.path.join(path, 'recognized.csv'))
+        df.to_csv(os.path.join(path, 'recognized.csv'), index_label='Code')
 

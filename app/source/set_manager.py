@@ -85,22 +85,24 @@ class SetManager:
 
 
     def get_results(self, set_name):
-        path = f'{self.path}{set_name}/'
-        with open(f'{path}description.json', 'r') as f:
+        set_path = os.path.join(self.path, set_name)
+        with open(os.path.join(set_path, 'description.json'), 'r') as f:
             description = json.load(f)
-        problems = list()
-        for problem in description['Problems']:
-            if problem['type'] == 'MATCH':
-                problems.append(eval.MatchProblem(
-                    ref_ans=problem['ans'], max_pts=5))
-            elif problem['type'] == 'SORT':
-                problems.append(eval.SortProblem(
-                    ref_ans=problem['ans'], max_pts=5, min_share=0.5))
-            else:
-                raise ValueError(f'Unknown type {problem["type"]}')
-        ans_table = pd.read_csv(f'{path}table_code_answers.csv')
-        eval.Evaluator(
-            *problems).eval_table(ans_table).to_csv(f'{path}table_results.csv', index=False)
+        # Загрузка проблем из разделов
+        problems = []
+        for section in description['Sections']:
+            for problem in section['Questions']:
+                problem_type = problem['type']
+                ref_ans = problem['ans']
+                if problem_type == 'MATCH':
+                    problems.append(eval.MatchProblem(ref_ans=ref_ans, max_pts=5))
+                elif problem_type == 'SORT':
+                    problems.append(eval.SortProblem(ref_ans=ref_ans, max_pts=5, min_share=0.5))
+                else:
+                    raise ValueError(f'Unknown type {problem_type}')
+        ans_table = pd.read_csv(os.path.join(set_path, 'recognized.csv'))
+        evaluated_table = eval.Evaluator(*problems).eval_table(ans_table)
+        evaluated_table.to_csv(os.path.join(set_path, 'results.csv'), index=False)
 
 
 if __name__ == '__main__':
