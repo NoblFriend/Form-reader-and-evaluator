@@ -1,7 +1,7 @@
 import json
 from app.source.modules.generator import BlankGenerator
-from app.source.modules.blank_reader import BlankReader
 from app.source.modules.restorer import BlankRestorer
+from app.source.modules.reader import BlankReader
 import app.source.modules.evaluator as eval
 from PIL import Image
 import os
@@ -75,15 +75,14 @@ class SetManager:
         print(warnings, errors)
 
 
-    # def get_answers(self, set_name):
-    #     pass
+    def get_answers(self, set_name):
+        set_path = os.path.join(self.path, set_name)
+        scans_path = os.path.join(set_path, 'scans')  
+        
+        reader = BlankReader(set_path) 
+        reader.recognize_answers_in_folder(scans_path)  
+        reader.save_data(set_path) 
 
-    #     # reader = BlankReader(set_path)
-    #     # for i in range(len(images)):
-    #     #     reader.recognize_answers(f'{set_path}scans/{i}')
-    #     # reader.save_data(set_path)
-
-    #     # shutil.rmtree(scans_path)
 
     def get_results(self, set_name):
         path = f'{self.path}{set_name}/'

@@ -81,11 +81,13 @@ class Drawer:
                 lineType=self.line_type
             )
 
-            cursor.move(dx=width, dy=0)
-
-            return {
+            dump_coords = {
                 'box': [top_left.tolist(), bot_right.tolist()]
             }
+
+            cursor.move(dx=width, dy=0)
+
+            return dump_coords
 
     class Text:
         thickness: int
