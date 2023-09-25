@@ -9,6 +9,7 @@ from app.source.set_manager import SetManager
 actions = [
     'create',
     'generate',
+    'restore',
     'recognize',
     'grade'
     ]
@@ -33,6 +34,8 @@ if __name__ == '__main__':
         sm.create_set(args['s'])
     elif args['m'] == 'generate':
         sm.generate_set(args['s'])
+    elif args['m'] == 'restore':
+        sm.restore_blanks(args['s'])
     elif args['m'] == 'recognize':
         sm.get_answers(args['s'])
     elif args['m'] == 'grade':

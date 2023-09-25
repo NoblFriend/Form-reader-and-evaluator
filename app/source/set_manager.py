@@ -1,6 +1,7 @@
 import json
 from app.source.modules.generator import BlankGenerator
 from app.source.modules.blank_reader import BlankReader
+from app.source.modules.restorer import BlankRestorer
 import app.source.modules.evaluator as eval
 from PIL import Image
 import os
@@ -60,20 +61,29 @@ class SetManager:
 
         shutil.rmtree(blanks_path)
 
-    def get_answers(self, set_name):
-        path = f'{self.path}{set_name}/'
-        images = convert_from_path(f'{path}scans.pdf')
+    def restore_blanks(self, set_name):
+        set_path = os.path.join(self.path, set_name)
+        images = convert_from_path(os.path.join(set_path, 'scans.pdf')) 
 
-        os.mkdir(f'{path}scans')
-        for i, image in enumerate(images):
-            image.save(f'{path}scans/{i}.png', 'PNG')
+        restorer = BlankRestorer(set_path)
 
-        reader = BlankReader(path)
-        for i in range(len(images)):
-            reader.recognize_answers(f'{path}scans/{i}')
-        reader.save_data(path)
+        for image in images:
+            restorer.restore(image)
 
-        shutil.rmtree(f'{path}scans')
+        warnings, errors = restorer.get_logs()
+
+        print(warnings, errors)
+
+
+    # def get_answers(self, set_name):
+    #     pass
+
+    #     # reader = BlankReader(set_path)
+    #     # for i in range(len(images)):
+    #     #     reader.recognize_answers(f'{set_path}scans/{i}')
+    #     # reader.save_data(set_path)
+
+    #     # shutil.rmtree(scans_path)
 
     def get_results(self, set_name):
         path = f'{self.path}{set_name}/'
