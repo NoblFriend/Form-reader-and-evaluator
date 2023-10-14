@@ -1,7 +1,7 @@
 """Copyright 2023 Alexey Rebrikov
 rebrikov-av@phystech.com
 """
-import os
+
 import argparse
 
 from app.source.set_manager import SetManager
@@ -9,12 +9,13 @@ from app.source.set_manager import SetManager
 actions = [
     'create',
     'generate',
+    'restore',
     'recognize',
     'grade'
     ]
 
 if __name__ == '__main__':
-    sm = SetManager(f'{os.getcwd()}/sets/')
+    sm = SetManager()
     ap = argparse.ArgumentParser()
     ap.add_argument("-m", 
                     metavar='mode', 
@@ -27,13 +28,14 @@ if __name__ == '__main__':
                     required=True,
                     help=f'problem set name at dir ./sets/')
     args = vars(ap.parse_args())
-    print(args)
 
     
     if args['m'] == 'create':
         sm.create_set(args['s'])
     elif args['m'] == 'generate':
         sm.generate_set(args['s'])
+    elif args['m'] == 'restore':
+        sm.restore_blanks(args['s'])
     elif args['m'] == 'recognize':
         sm.get_answers(args['s'])
     elif args['m'] == 'grade':
