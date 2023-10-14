@@ -63,7 +63,7 @@ class MatchProblem(Problem):
     def evaluate_pts(self, evl_ans: str) -> int:
         pts = 0
         for pos, letter in enumerate(evl_ans):
-            if letter in self.ref_ans_table.index and evl_ans.count(letter) == 1:
+            if letter in self.ref_ans_table.index:
                 pts += self.ref_ans_table.loc[letter, pos]
         return pts
 
