@@ -152,7 +152,8 @@ class Codes:
         return codes
 
     def draw(self, drawer: graphics.Drawer) -> None:
-        self.key.draw(drawer)
+        if config.show_participant_code:
+            self.key.draw(drawer)
         for qr in self.qrs:
             qr.draw(drawer)
 

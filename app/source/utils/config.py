@@ -35,6 +35,7 @@ class Configuration:
         self.page = self.Page()
         self.fields = self.Fields()
         self.qr = self.QR(self.page)
+        self.show_participant_code = True
 
 
 config = Configuration()
