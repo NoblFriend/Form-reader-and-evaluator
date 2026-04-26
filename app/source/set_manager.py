@@ -51,7 +51,7 @@ class SetManager:
         bg.generate()
 
         images = [
-            Image.open(os.path.join(blanks_path,f'{blank}.png')) for blank in bg.keys
+            Image.open(os.path.join(blanks_path, f'{blank}.png')) for blank in bg.keys
         ]
 
         images[0].save(
@@ -63,7 +63,7 @@ class SetManager:
 
     def restore_blanks(self, set_name):
         set_path = os.path.join(self.path, set_name)
-        images = convert_from_path(os.path.join(set_path, 'scans.pdf')) 
+        images = convert_from_path(os.path.join(set_path, 'scans.pdf'))
 
         restorer = BlankRestorer(set_path)
 
@@ -74,15 +74,13 @@ class SetManager:
 
         print(warnings, errors)
 
-
     def get_answers(self, set_name):
         set_path = os.path.join(self.path, set_name)
-        scans_path = os.path.join(set_path, 'scans')  
-        
-        reader = BlankReader(set_path) 
-        reader.recognize_answers_in_folder(scans_path)  
-        reader.save_data(set_path) 
+        scans_path = os.path.join(set_path, 'scans')
 
+        reader = BlankReader(set_path)
+        reader.recognize_answers_in_folder(scans_path)
+        reader.save_data(set_path)
 
     def get_results(self, set_name):
         set_path = os.path.join(self.path, set_name)
@@ -102,7 +100,8 @@ class SetManager:
                     raise ValueError(f'Unknown type {problem_type}')
         ans_table = pd.read_csv(os.path.join(set_path, 'recognized.csv'))
         evaluated_table = eval.Evaluator(*problems).eval_table(ans_table)
-        evaluated_table.to_csv(os.path.join(set_path, 'results.csv'), index=False)
+        evaluated_table.to_csv(os.path.join(
+            set_path, 'results.csv'), index=False)
 
 
 if __name__ == '__main__':

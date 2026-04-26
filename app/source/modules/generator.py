@@ -62,7 +62,7 @@ class QuestionNumber:
     def draw(self, drawer: graphics.Drawer, cursor) -> None:
         drawer.text(
             cursor=cursor,
-            text=f'{self.number}.',
+            text=f'{self.number:>{self.length}}.',
             box_height=self.height,
             letter_height=int(0.7*self.height),
             pos='mid'
