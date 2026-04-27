@@ -25,6 +25,14 @@ class SetManager:
                 "10-": 1,
                 "11-": 1
             },
+            "ExampleLetters": "ABCDE",
+            "BlankInfo": {
+                "name": "Блиц-тур",
+                "stage": "Заключительный этап",
+                "competition": "XXXIII Всероссийская олимпиада по Астрономии",
+                "location": "Сириус",
+                "date": "26.04.2026"
+            },
             "Sections": [
                 {
                     "Questions": [
