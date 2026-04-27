@@ -2,6 +2,7 @@ from typing import Any
 import numpy as np
 import cv2
 import qrcode
+from PIL import Image, ImageDraw, ImageFont
 from app.source.utils.config import config
 
 
@@ -90,63 +91,42 @@ class Drawer:
             return dump_coords
 
     class Text:
-        thickness: int
-        line_type: int
         main_color: int
         second_color: int
 
-        font_style = cv2.FONT_HERSHEY_SIMPLEX
-        font_height = 22
-        font_width = 20
-
-        def __init__(self, canvas, main_color: int, second_color: int, thickness: int = 2, line_type: int = cv2.LINE_AA):
+        def __init__(self, canvas, main_color: int, second_color: int):
             self.canvas = canvas
-            self.thickness = thickness
-            self.line_type = line_type
             self.main_color = main_color
             self.second_color = second_color
 
-        def __call__(self, cursor: Cursor, text: str, letter_height: int, box_height: int = 0, pos: str = 'bot', color_style: str = 'main', thickness: int = None) -> Any:
-            point: tuple
-            font_scale = letter_height / self.font_height
-            letter_width = int(font_scale * self.font_width)
+        def __call__(self, cursor: Cursor, text: str, letter_height: int,
+                     box_height: int = 0, pos: str = 'bot',
+                     color_style: str = 'main', thickness=None,
+                     font_path: str = None) -> Any:
+            if font_path is None:
+                font_path = config.fonts.mono
+            color = self.main_color if color_style == 'main' else self.second_color
+            font = ImageFont.truetype(font_path, letter_height)
+            ascent, descent = font.getmetrics()
+            text_top: int
             x, y = cursor.x, cursor.y
-            if not thickness:
-                thickness = int(font_scale)
             if pos == 'bot':
-                point = (x, y+box_height)
+                text_top = y + box_height - (ascent + descent)
             elif pos == 'top':
-                point = (x, y+letter_height)
+                text_top = y
             elif pos == 'mid':
-                point = (x, y+(box_height+letter_height)//2)
+                text_top = y + (box_height - (ascent + descent)) // 2
             else:
                 raise ValueError(
                     f'Unknown position {pos}. Supports only mid, bot, top'
                 )
-            color: int
-            if color_style == 'main':
-                color = self.main_color
-            elif color_style == 'second':
-                color = self.second_color
-            else:
-                raise ValueError(
-                    f'Unknown color_style {color_style}. Supports only main, second'
-                )
-            cv2.putText(
-                img=self.canvas,
-                text=text,
-                org=point,
-                fontFace=self.font_style,
-                fontScale=font_scale,
-                color=color,
-                thickness=thickness,
-                lineType=self.line_type
-            )
-            width = letter_width * len(text)
+            pil_img = Image.fromarray(self.canvas)
+            draw = ImageDraw.Draw(pil_img)
+            draw.text((x, text_top), text, fill=color, font=font)
+            width = int(draw.textlength(text, font=font))
+            np.copyto(self.canvas, np.array(pil_img))
             cursor.move(dx=width, dy=0)
-            return {
-                'width': width
-            }
+            return {'width': width}
 
     class QR:
         def __init__(self, canvas) -> None:
@@ -169,6 +149,7 @@ class Drawer:
             self.canvas[y1:y2, x1:x2] = self._create(data)
 
     def __init__(self, canvas):
+        self.canvas = canvas
         self.text = self.Text(
             canvas=canvas,
             main_color=self.main_color,
@@ -181,3 +162,15 @@ class Drawer:
         self.qr = self.QR(
             canvas=canvas
         )
+
+    def ttf_text_centered(self, font_path: str, font_size: int,
+                          text: str, center: tuple) -> None:
+        pil_img = Image.fromarray(self.canvas)
+        draw = ImageDraw.Draw(pil_img)
+        font = ImageFont.truetype(font_path, font_size)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        w, h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        x = center[0] - w // 2 - bbox[0]
+        y = center[1] - h // 2 - bbox[1]
+        draw.text((x, y), text, fill=self.main_color, font=font)
+        np.copyto(self.canvas, np.array(pil_img))
